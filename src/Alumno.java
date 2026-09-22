@@ -1,12 +1,21 @@
 public class Alumno {
+    private String codigo;
     private String nombre;
     private String ApellidoPat;
     private String ApellidoMat;
     private String DNI;
     private String carnet;
-    private String beca;
+    private boolean beca;
 
     public Alumno() {
+    }
+
+    public String getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
     }
 
     public String getNombre() {
@@ -49,13 +58,16 @@ public class Alumno {
         this.carnet = carnet;
     }
 
-    public String getBeca() {
+    public boolean isBeca() {
         return beca;
     }
 
-    public void setBeca(String beca) {
+    public void setBeca(boolean beca) {
         this.beca = beca;
     }
     
-    
+    public void VerDatos()
+    {
+        System.out.println("");
+    }
 }
