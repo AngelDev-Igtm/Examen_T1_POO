@@ -68,6 +68,8 @@ public class Alumno {
     
     public void VerDatos()
     {
-        System.out.println("");
+        System.out.println("Codigo de Alumno: " + this.codigo + "Nombre del Alumno: " + this.nombre + "Apellido Paterno del Alumno: " 
+                            + this.ApellidoPat + "Apellido Materno del Alumno: " + this.ApellidoMat + "Ingrese el DNI del ALumno: " + this.DNI
+                            + "ingrese el carnet del alumno SI/NO: " +this.carnet + "El Alumno cuenta con beca?: " + this.beca);
     }
 }
