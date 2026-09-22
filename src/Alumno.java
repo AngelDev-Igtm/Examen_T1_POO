@@ -5,6 +5,7 @@ public class Alumno {
     private String ApellidoMat;
     private String DNI;
     private String carnet;
+    private boolean beca;
     private String Nivelsocieconomico;
 
     public String getNivelsocieconomico() {
@@ -14,7 +15,6 @@ public class Alumno {
     public void setNivelsocieconomico(String Nivelsocieconomico) {
         this.Nivelsocieconomico = Nivelsocieconomico;
     }
-    private boolean beca;
 
     public Alumno() {
     }
@@ -75,10 +75,11 @@ public class Alumno {
         this.beca = beca;
     }
     
-    public void VerDatos()
+    public String VerDatos()
     {
         System.out.println("Codigo de Alumno: " + this.codigo + "Nombre del Alumno: " + this.nombre + "Apellido Paterno del Alumno: " 
                             + this.ApellidoPat + "Apellido Materno del Alumno: " + this.ApellidoMat + "Ingrese el DNI del ALumno: " + this.DNI
                             + "ingrese el carnet del alumno SI/NO: " +this.carnet + "El Alumno cuenta con beca?: " + this.beca);
+        return VerDatos();
     }
 }
