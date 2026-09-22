@@ -5,6 +5,15 @@ public class Alumno {
     private String ApellidoMat;
     private String DNI;
     private String carnet;
+    private String Nivelsocieconomico;
+
+    public String getNivelsocieconomico() {
+        return Nivelsocieconomico;
+    }
+
+    public void setNivelsocieconomico(String Nivelsocieconomico) {
+        this.Nivelsocieconomico = Nivelsocieconomico;
+    }
     private boolean beca;
 
     public Alumno() {
