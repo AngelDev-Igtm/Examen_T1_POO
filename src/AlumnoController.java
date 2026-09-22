@@ -1,6 +1,3 @@
-
-import java.util.ArrayList;
-
 public class AlumnoController 
 {
     public void AgregarAlumno(String AlumnoNuevo) {
@@ -12,8 +9,11 @@ public class AlumnoController
         }
     }
     
-    public void ValidarDni()
+    public boolean ValidarDni(String DNI)
     {
-
+        if (DNI == null) {
+            return false;
+        }
+        return DNI.matches("\\d{8}");
     }
 }
