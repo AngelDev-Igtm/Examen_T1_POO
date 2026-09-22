@@ -1,14 +1,14 @@
 package t1_poo;
 import java.util.Scanner;
-
 public class T1_poo {
     
     public static void main(String[] args) {
-         Scanner scanner = new Scanner(System.in);
-
+        
+        Scanner scanner = new Scanner(System.in);
+       
         System.out.print("Ingrese código del alumno: ");
         String codigo = scanner.nextLine();
-
+        
         System.out.print("Ingrese nombre del alunmo: ");
         String nombre = scanner.nextLine();
 
@@ -29,7 +29,7 @@ public class T1_poo {
             System.out.println("El alumno no cuenta con carnet");
         }
         
-        System.out.print("Ingrese el apellido paterno: ");
-        boolean  beca = scanner.hasNextDouble();
+        System.out.print("El alumno cuenta con beca SI/NO: ");
+        boolean  beca = scanner.hasNextDouble(); 
     }
 }
